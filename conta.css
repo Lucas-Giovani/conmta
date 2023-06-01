@@ -3,6 +3,7 @@ body
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .cabecalho
@@ -91,7 +92,7 @@ body
     border-style: solid;
     border-width: 3px;
     width: 80%;
-    height: 75vh;
+    height: auto;
     flex-direction: column;
 }
 
@@ -102,7 +103,7 @@ body
     align-items: center;
 }
 
-.informacao h1
+.minhaconta h1
 {   
     font-size: 30px;
     display: flex;
@@ -118,15 +119,21 @@ body
     margin-bottom: 5px;
 }
 
-.informacao h2
+.informacoes h2
 {
     margin-left: 6%;
-    font-size: 30px;
-    display: flex;
     font-size: 25px;
+    display: flex;
 }
 
-.informacao h3
+.informacoes h3
+{
+    margin-left: 6%;
+    display: flex;
+    font-size: 15px;
+}
+
+.informacoes h4
 {
     margin-left: 6%;
     font-size: 30px;
@@ -134,15 +141,7 @@ body
     font-size: 15px;
 }
 
-.informacao h4
-{
-    margin-left: 6%;
-    font-size: 30px;
-    display: flex;
-    font-size: 15px;
-}
-
-.minhacontaicone
+.icone
 {
     color: rgb(0, 146, 0) ;
 }
@@ -194,6 +193,32 @@ body
     transform: scale(0.95);
   }
 
+  .btn2 {
+    width: fit-content;
+    min-width: 100px;
+    height: 35px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2.5px solid hwb(165 61% 34%, 50%);
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: hsl(120, 64%, 47%, 50%);;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2%;
+    margin-top: -0.5%;
+  }
+  
+  .btn2:hover {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .btn2:active {
+    transform: scale(0.95);
+  }
+
 .minhaconta
 {
     display: flex;
@@ -202,3 +227,156 @@ body
     align-items: center;
     justify-content: center;
 }
+
+.enderecotitulo
+{
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    margin-left: 12%;
+    font-size: 25px;    
+}
+
+.enderecos
+{
+    width: 100%;
+    margin-left: 6%;
+    height: auto;
+}
+
+.enderecos h1
+{
+    font-size: 25px;
+}
+
+.enderecos h2
+{
+    font-size: 15px;
+}
+
+.meuspedidostitulo
+{
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    margin-left: 12%;
+    font-size: 25px;   
+}
+
+.tabela td
+{
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+    border-color: hsla(120, 86%, 28%, 0.5);
+}
+
+.tabela
+{
+    height: 20vh;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+
+.rodape
+{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(95, 228, 115);
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logo_rodape
+  {
+    scale: 20%;
+    margin-left: -15%;
+  }
+  .rodape ul
+  {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin-left: -8%;
+  }
+  .contatos
+  {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .quadradosuporte
+  {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 30%;
+    margin-top: -16%;
+    margin-left: -22%;
+    border-radius: 25px;
+  }
+
+ .div45
+ {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .div24
+ {
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .div30
+ {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .icone2
+{
+    color: green;
+    scale: 220%;
+    padding: 1px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px)
+{
+    .botoesalterar
+    {
+        margin-left: 100px;
+    }
+    .botoesalterar .btn1
+    {
+        height: 50px;
+        margin-left: 20px;
+    }
+    .enderecotitulo .btn2
+    {
+        height: auto;
+        width: auto;
+        margin-right: 40px;
+    }
+}
+  
